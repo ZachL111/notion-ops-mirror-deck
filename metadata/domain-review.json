@@ -1,0 +1,73 @@
+{
+  "repo": "notion-ops-mirror-deck",
+  "language": "JavaScript",
+  "category": "Automation",
+  "goal": "Develop a JavaScript command-oriented project for mirror scenarios with deny and allow fixtures, explainable decision traces, and explicit failure cases.",
+  "review_model": {
+    "terms": [
+      "dry-run spread",
+      "rename risk",
+      "operator cost",
+      "idempotence"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "dry-run spread",
+      "signal": 68,
+      "slack": 48,
+      "drag": 8,
+      "confidence": 91,
+      "score": 251,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "rename risk",
+      "signal": 77,
+      "slack": 48,
+      "drag": 25,
+      "confidence": 94,
+      "score": 221,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "operator cost",
+      "signal": 55,
+      "slack": 43,
+      "drag": 20,
+      "confidence": 82,
+      "score": 175,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "idempotence",
+      "signal": 86,
+      "slack": 45,
+      "drag": 18,
+      "confidence": 79,
+      "score": 242,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "dry-run spread",
+      "signal": 82,
+      "slack": 36,
+      "drag": 23,
+      "confidence": 66,
+      "score": 197,
+      "lane": "ship"
+    }
+  ]
+}
