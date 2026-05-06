@@ -1,0 +1,17 @@
+{
+  "repo": "notion-ops-mirror-deck",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 3,
+    "ship": 197,
+    "watch": 123
+  },
+  "terms": [
+    "dry-run spread",
+    "rename risk",
+    "operator cost",
+    "idempotence"
+  ]
+}
